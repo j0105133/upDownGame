@@ -10,12 +10,12 @@
 
 
 let computerNum =0
-let playButton = document.getElementById("play-button")
-let userInput = document.getElementById("user-input")
-let resultArea = document.getElementById("result-area")
+let playButton = document.getElementById("play-button");
+let userInput = document.getElementById("user-input");
+let resultArea = document.getElementById("result-area");
 
 
-playButton.addEventListener("click",play)
+playButton.addEventListener("click" ,play);
 
 
 function pickComputerNum(){
@@ -28,11 +28,11 @@ pickComputerNum();
 function play(){
     let userValue = userInput.value;
     if(userValue < computerNum){
-        resultArea.textContent("up")
+        resultArea.textContent("up");
     }else if(userValue > computerNum){
-        resultArea.textContent("down")
+        resultArea.textContent("down");
     }else{
-        resultArea.textContent("맞추셨습니다")
+        resultArea.textContent("맞추셨습니다");
     }
 }
 
