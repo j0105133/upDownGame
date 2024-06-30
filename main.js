@@ -9,30 +9,28 @@
 //유저가 이미 입력한 숫자를 또 입력하면, 기회를 깍지 않는다.
 
 
-let computerNum =0
+let computerNum =0;
 let playButton = document.getElementById("play-button");
 let userInput = document.getElementById("user-input");
 let resultArea = document.getElementById("result-area");
 
 
-playButton.addEventListener("click" ,play);
+playButton.addEventListener("click",play);
 
 
 function pickComputerNum(){
-    computerNum = Math.floor(Math.random()*100)+1;
-    console.log("정답 : ",computerNum);
+    computerNum = Math.floor(Math.random() * 100)+1;
+    console.log("정답", computerNum);
 }
-pickComputerNum();
-
 
 function play(){
     let userValue = userInput.value;
     if(userValue < computerNum){
-        resultArea.textContent("up");
+        resultArea.textContent="up";
     }else if(userValue > computerNum){
-        resultArea.textContent("down");
+        resultArea.textContent="down";
     }else{
-        resultArea.textContent("맞추셨습니다");
+        resultArea.textContent="맞추셨습니다";
     }
 }
-
+pickComputerNum();
