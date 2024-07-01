@@ -1,0 +1,66 @@
+/* style.css */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background-color: #ffebcd;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #d2691e;
+    margin-top: 20px;
+    text-shadow: 2px 2px #ffa07a;
+}
+
+#result-area, #chance-area, #answer-area {
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid #d2691e;
+    background-color: #fff8dc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#user-input {
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #d2691e;
+    background-color: #fff8dc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff4500;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.9s;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+
+@media (max-width: 600px) {
+    #user-input {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    button {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    #result-area, #chance-area, #answer-area {
+        font-size: 16px;
+    }
+}
